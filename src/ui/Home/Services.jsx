@@ -37,7 +37,7 @@ const HomeService = () => {
   return (
     <section className="relative py-20 px-4 md:px-16 bg-cover bg-center text-white bg-[url('https://html.themexriver.com/industo/images/main-slider/image-2.jpg')] bg-fixed ">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-[#111111d0] pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-[#0f184bd0] pointer-events-none z-0" />
 
       {/* Main Content */}
       <div className="relative z-10 text-center mb-12">

@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
-import Cursor from './ui/Home/Cursor'
+import Cursor from './ui/Cursor'
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
     <Routes>
     <Route path='/' element={<Home />} />
     </Routes>
+  
     </div>
   )
 }

@@ -8,8 +8,8 @@ const Button = ({ href, text, secondarycolor, primarycolor }) => {
       to={href}
       className='inline-block'
     >
-    <div  className={`py-3 rounded whitespace-nowrap   group md:px-10 px-6 relative overflow-hidden ${primarycolor}`}>   
-         <span className="relative text-white font-semibold z-10 h-fit w-fit inline-block overflow-hidden">
+    <div  className={`py-3 rounded whitespace-nowrap text-white    group md:px-10 px-6 relative overflow-hidden ${primarycolor}`}>   
+         <span className="relative font-bold z-10 h-fit w-fit inline-block overflow-hidden">
         <span className="block whitespace-nowrap transition-transform duration-300 group-hover:-translate-y-full">
           {text}
         </span>
@@ -17,7 +17,7 @@ const Button = ({ href, text, secondarycolor, primarycolor }) => {
           {text}
         </span>
       </span>
-      <div className='inline-block relative bottom-1.5 text-white z-10 ml-2 bg-[#e9e2e234] px-2 py-1'>
+      <div className='inline-block relative bottom-1.5  z-10 ml-2 bg-[#e9e2e234] px-2 py-1'>
 
         <FaPlus className='inline-block ' />
       </div>

@@ -4,7 +4,7 @@ import Button from "../Button";
 
 const Heroic = () => {
   return (
-    <div className="w-full bg-center bg-cover h-[100vh] herobg bg-[url('https://html.themexriver.com/industo/images/main-slider/image-2.jpg')] bg-fixed text-white relative overflow-hidden ">
+    <div className="w-full bg-center transition-all  bg-cover h-[100vh] herobg bg-[url('https://html.themexriver.com/industo/images/main-slider/image-2.jpg')] bg-fixed text-white relative overflow-hidden ">
       <div className="absolute inset-0 bg-gradient-to-l from-[#111111a2]  to-[#0b01788a]"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center h-full">
@@ -22,49 +22,47 @@ const Heroic = () => {
         </p>
 
         <div className="flex items-center mt-8 gap-6 flex-wrap">
-         <Button href={'/contact'} text={"Explore more"} secondarycolor={"bg-blue-600"} primarycolor={"bg-green-400"} />
+         <Button href={'/contact'} text={"Explore more"} secondarycolor={"bg-white 0"} primarycolor={"bg-green-400 hover:text-blue-500 "} />
         
         </div>
       </div>
         
-      <div className="absolute  bottom-0 w-full  overflow-hidden leading-none sm:block hidden">
+      <div className="absolute   bottom-0 w-[200%]  overflow-hidden leading-none sm:flex hidden">
+       
      <svg
   viewBox="0 0 500 200"
   xmlns="http://www.w3.org/2000/svg"
   preserveAspectRatio="none"
-  className="w-full h-[150px]"
+  className="w-1/2 h-[150px] wave "
 >
-  <path fill="#ffff" >
-    <animate
-      attributeName="d"
-      dur="5s"
-      
-      repeatCount="indefinite"
-      values="
-        M0,100 
-        C83,200 83,0 167,100 
-        C250,200 250,0 333,100 
-        C417,200 417,0 500,100 
-        L500,200 L0,200 Z;
-
-        M0,100 
-        C83,0 83,200 167,100 
-        C250,0 250,200 333,100 
-        C417,0 417,200 500,100 
-        L500,200 L0,200 Z;
-
-        M0,100 
-        C83,200 83,0 167,100 
-        C250,200 250,0 333,100 
-        C417,200 417,0 500,100 
-        L500,200 L0,200 Z
-      "
-    />
-  </path>
+<path
+  fill="#ffffff" stroke="#ffffff"
+  d="M0,100 
+     C83,200 83,0 167,100 
+     C250,200 250,0 333,100 
+     C417,200 417,0 500,100.5
+     L500,200 L0,200 Z"
+/>
 </svg>
+    <svg
+  viewBox="0 0 500 200" 
+  xmlns="http://www.w3.org/2000/svg"
+  preserveAspectRatio="none"
+  className="w-1/2 h-[150px] wave"
+>
+<path
+  fill="#ffffff"
+  d="M0,100 
+     C83,200 83,0 167,100 
+     C250,200 250,0 333,100 
+     C417,200 417,0 500,100 
+     L500,200 L0,200 Z"
+/>
+</svg>
+</div>
 
       </div>
-    </div>
+    
   );
 };
 

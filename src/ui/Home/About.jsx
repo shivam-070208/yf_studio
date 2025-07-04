@@ -15,7 +15,7 @@ const HomeAboutSection = () => {
               alt="Technicians at work"
               className="w-full h-[390px] object-cover rounded-xl"
             />
-            <div className="absolute top-4 left-4 bg-blue-600 text-white px-4 py-2 rounded-lg text-center shadow-md">
+            <div className="absolute top-4 left-4 bg-blue-600 text-white px-4 py-4  text-center shadow-md">
               <p className="text-2xl font-bold">26+</p>
               <p className="text-sm">Years Experience</p>
             </div>
@@ -32,7 +32,7 @@ const HomeAboutSection = () => {
 
         {/* Text Section */}
         <div className="w-full md:w-1/2 text-left">
-          <span className="inline-block text-sm pattern text-blue-600 px-3 py-1 rounded-full font-semibold mb-2">
+          <span className="inline-block text-lg pattern text-blue-600 px-3 py-1 rounded-full font-semibold mb-2">
             About Y.F Enterprises
           </span>
           <h2 className="text-3xl font-extrabold text-blue-900 leading-tight mb-4">

@@ -4,7 +4,7 @@
   .cursorspan{
     @apply w-4 h-4 -translate-x-1/2 -translate-y-1/2 z-[999] pointer-events-none fixed   bg-cursor rounded-full;
     animation: scaleIn 0.9s infinite cubic-bezier(0.2, 0, 1.0, 0.7) alternate;
-     mix-blend-mode:multiply;
+   
   }
 .pattern {
     @apply relative inline-block px-10 py-3;
@@ -55,22 +55,19 @@ body,html{
     transform: scale(1.0);
   }
 }
-@keyframes bgscale {
-  0% {
-    background-size: 100% 100%;
-  } 30% {
-    background-size: 100% 100%;
+@keyframes wave{
+  0%{
+    transform: translateX(0%);
   }
-  60% {
-    background-size: 105% 105%;
-  }
- 100% {
-    background-size: 105% 105%; /* "Pause" frame */
+  100%{
+    transform: translateX(-100%);
   }
 }
+
 @keyframes maskscale{
   0%{
     mask-size: 0% 100%;
+    mask-position: 120%;
   }20%{
     mask-size: 100% 100%;
   }
@@ -91,12 +88,10 @@ body::-webkit-scrollbar-thumb{
   border-radius: 40px;
 }
 
-.herobg:hover {
-  animation: bgscale 1.9s infinite  ease-in-out alternate-reverse;
-  transition: all;
-
-  background-position: center;
-  background-repeat: no-repeat;
+.wave{
+  animation: wave 10s infinite linear;
 }
+
+
 
 
