@@ -1,6 +1,6 @@
 import React from 'react'
-import Primarynav from '../ui/Home/Primarynav'
-import Secondarynav from '../ui/Home/Secondarynav'
+import Primarynav from '../ui/Primarynav'
+import Secondarynav from '../ui/Secondarynav'
 
 const Navbar = () => {
   return (

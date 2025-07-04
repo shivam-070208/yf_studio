@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaPlug, FaShieldAlt } from 'react-icons/fa';
-import Button from './Button';
+import Button from '../Button';
 
 const HomeAboutSection = () => {
   return (
