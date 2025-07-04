@@ -6,7 +6,7 @@ import Cursor from './ui/Home/Cursor'
 
 const App = () => {
   return (
-    <div className=' w-screen h-screen px-3'>
+    <div className=' w-screen min-h-screen  px-3'>
     <Navbar/>
     <Cursor />
     <Routes>

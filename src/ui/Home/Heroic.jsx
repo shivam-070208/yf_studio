@@ -13,7 +13,7 @@ const Heroic = () => {
         </h3>
 
         <h1 className="text-5xl sm:text-6xl font-bold mt-2 leading-tight">
-          We’re Best <span className="text-teal-400">Providing</span><br />
+          We’re Best <span className="text-blue-700 font-serif">,</span><span className="text-teal-400">Providing</span><br />
           Best Flames.
         </h1>
 
@@ -27,17 +27,18 @@ const Heroic = () => {
         </div>
       </div>
         
-      <div className="absolute bottom-0 w-full  overflow-hidden leading-none sm:block hidden">
+      <div className="absolute  bottom-0 w-full  overflow-hidden leading-none sm:block hidden">
      <svg
   viewBox="0 0 500 200"
   xmlns="http://www.w3.org/2000/svg"
   preserveAspectRatio="none"
   className="w-full h-[150px]"
 >
-  <path fill="#ffff">
+  <path fill="#ffff" >
     <animate
       attributeName="d"
       dur="5s"
+      
       repeatCount="indefinite"
       values="
         M0,100 

@@ -22,7 +22,7 @@ const Button = ({ href, text, secondarycolor, primarycolor }) => {
         <FaPlus className='inline-block ' />
       </div>
       <div
-        className={`absolute  w-2 h-2 rounded-full ${secondarycolor} -translate-x-1/2 -translate-y-1/2  z-0  -top-4 transition-all duration-700 group-hover:scale-[100]`}
+        className={`absolute  w-2 h-2 rounded-full ${secondarycolor} -translate-x-1/2 -translate-y-1/2  z-0  -top-4 transition-all duration-700 group-hover:scale-[60]`}
       />
 </div>
       

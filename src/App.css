@@ -2,9 +2,24 @@
 
 @layer utilities{
   .cursorspan{
-    @apply w-4 h-4 -translate-x-1/2 -translate-y-1/2 z-[999] pointer-events-none absolute   bg-cursor rounded-full;
+    @apply w-4 h-4 -translate-x-1/2 -translate-y-1/2 z-[999] pointer-events-none fixed   bg-cursor rounded-full;
     animation: scaleIn 0.9s infinite cubic-bezier(0.2, 0, 1.0, 0.7) alternate;
-     mix-blend-mode:lighten;
+     mix-blend-mode:multiply;
+  }
+.pattern {
+    @apply relative inline-block px-10 py-3;
+  }
+
+  .pattern::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-full bg-blue-500 rotate-180;
+    mask-image: url('./assets/pattern.png');
+    -webkit-mask-image: url('./assets/pattern.png'); /* Safari support */
+  
+    mask-size: 120%;
+    animation: maskscale 2s infinite ease-in;
+    
+    
   }
 }
 
@@ -42,25 +57,39 @@ body,html{
   0% {
     background-size: 100% 100%;
   }
-  100% {
-    background-size: 100% 99%;
+  60% {
+    background-size: 105% 105%;
   }
- 40% {
-    background-size: 100% 100%; /* "Pause" frame */
+ 100% {
+    background-size: 105% 105%; /* "Pause" frame */
   }
 }
-::-webkit-scrollbar{
+@keyframes maskscale{
+  0%{
+    width: 0%;
+  }40%{
+    width: 100%;
+  }
+  100%{
+    width: 100%;
+  }
+}
+body::-webkit-scrollbar{
   background:white;
   width: 10px;
   
 }
-::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
   background-color: var(--color-green-600);
   border-radius: 40px;
 }
 
 .herobg {
-  animation: bgscale 1.2s infinite alternate ease-in-out;
+  animation: bgscale 1.9s infinite  ease-in-out alternate-reverse;
+  transition: all;
+
   background-position: center;
   background-repeat: no-repeat;
 }
+
+

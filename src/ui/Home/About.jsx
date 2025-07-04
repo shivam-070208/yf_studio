@@ -20,7 +20,7 @@ const HomeAboutSection = () => {
             </div>
           </div>
 
-          <div className="border-white rounded-lg w-36 h-36 border-[6px] translate-x-1/2 translate-y-1/2 z-10 absolute bottom-0 right-8 shadow-md overflow-hidden">
+          <div className="border-white rounded-lg w-36 h-36 border-[6px] translate-x-1/2 translate-y-1/2 z-10 absolute bottom-0 right-8 overflow-hidden">
             <img
               src="https://html.themexriver.com/industo/images/resource/about-2.jpg"
               alt="Control equipment"
@@ -31,7 +31,7 @@ const HomeAboutSection = () => {
 
         {/* Text Section */}
         <div className="w-full md:w-1/2 text-left">
-          <span className="inline-block text-sm bg-blue-100 text-blue-600 px-3 py-1 rounded-full font-semibold mb-2">
+          <span className="inline-block text-sm pattern text-blue-600 px-3 py-1 rounded-full font-semibold mb-2">
             About Y.F Enterprises
           </span>
           <h2 className="text-3xl font-extrabold text-blue-900 leading-tight mb-4">

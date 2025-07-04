@@ -14,11 +14,11 @@ const HomeService = () => {
   return (
     <section className="relative py-20 px-4 md:px-16 bg-cover bg-center text-white bg-[url('https://html.themexriver.com/industo/images/main-slider/image-2.jpg')] bg-fixed ">
       {/* Background Overlay */}
-      <div className="absolute inset-0 bg-[#111111db] pointer-events-none z-0" />
+      <div className="absolute inset-0 bg-[#111111d0] pointer-events-none z-0" />
 
       {/* Main Content */}
       <div className="relative z-10 text-center mb-12">
-        <h3 className="text-white font-bold  tracking-wide uppercase text-lg ">What We Do</h3>
+        <h3 className="text-white font-bold  tracking-wide uppercase text-lg pattern ">What We Do</h3>
         <h2 className="text-3xl md:text-4xl font-extrabold mt-2">
           We Provide Best Services<br /> For Industries
         </h2>
@@ -37,9 +37,9 @@ const HomeService = () => {
              <FaPlus fontWeight={100} />
             </button>
             <div className='flex w-full h-full  absolute top-0 left-0 -z-1'>
-                {Array(6).fill(0).map((_,i)=>(
+                {Array(4).fill(0).map((_,i)=>(
                     
-                    <div key={i} className='h-full flex-1 -translate-y-[100%] transition-all duration-300 group-hover:translate-y-0 bg-green-400 ' style={{ transitionDelay: `${hovered?0:i*20}ms` }}/>
+                    <div key={i} className='h-full flex-1 -translate-y-[100%] transition-all duration-300 group-hover:translate-y-0 bg-green-400 ' style={{ transitionDelay: `${hovered?0:i*70}ms` }}/>
                 ))}
             </div>
           </div>
@@ -51,7 +51,7 @@ const HomeService = () => {
           text="More Services"
           href="/services"
           primarycolor="bg-blue-400"
-          secondarycolor="bg-green-400"
+          secondarycolor="bg-black"
         />
       </div>
     </section>
