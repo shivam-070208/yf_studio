@@ -1,14 +1,15 @@
 import React from 'react';
 import { FaPlug, FaShieldAlt } from 'react-icons/fa';
 import Button from '../Button';
+import { motion } from 'motion/react';
 
 const HomeAboutSection = () => {
   return (
     <section className="py-12 px-4 bg-white w-full max-w-2xl md:max-w-5xl mx-auto relative">
       <div className="flex flex-col md:flex-row items-center gap-16">
         {/* Image Section */}
-        <div className="relative w-full md:w-1/2 max-w-[500px]">
-          <div className="rounded-xl overflow-hidden">
+        <div className="relative w-full md:w-1/2 max-w-[500px] inline-block">
+          <motion.div initial={{x:-200,rotate:180}} viewport={{once:true}} transition={{duration:0.5}} whileInView={{rotate:0,x:0,opacity:1}} className="rounded-xl overflow-hidden block">
             <img
               src="https://images.unsplash.com/photo-1603791440384-56cd371ee9a7"
               alt="Technicians at work"
@@ -18,15 +19,15 @@ const HomeAboutSection = () => {
               <p className="text-2xl font-bold">26+</p>
               <p className="text-sm">Years Experience</p>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="border-white rounded-lg w-36 h-36 border-[6px] translate-x-1/2 translate-y-1/2 z-10 absolute bottom-0 right-8 overflow-hidden">
+          <motion.div initial={{opacity:0, y:40}} whileInView={{opacity:1,y:0}} transition={{duration:1}} className="border-white rounded-lg w-36 h-36 border-[6px] translate-x-1/2 translate-y-1/2 z-10 absolute bottom-0 right-8 overflow-hidden">
             <img
               src="https://html.themexriver.com/industo/images/resource/about-2.jpg"
               alt="Control equipment"
               className="object-cover w-full h-full"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* Text Section */}

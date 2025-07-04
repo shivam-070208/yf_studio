@@ -4,6 +4,7 @@ import Heroic from '../ui/Home/Heroic'
 import HomeAboutSection from '../ui/Home/About'
 import Button from '../ui/Button'
 import HomeService from '../ui/Home/Services'
+import HomeTeam from '../ui/Home/Team'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Heroic />
       <HomeAboutSection />
       <HomeService />
+      <HomeTeam />
        
     </div>
   )

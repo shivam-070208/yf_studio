@@ -10,7 +10,7 @@ const Cursor = () => {
     },[])
     return (
     <motion.div  
- animate={{top:mouseposition.y,left:mouseposition.x,scale:mousedown||5}} transition={{type:'spring',stiffness:100}} className='cursorspan' />
+ animate={{top:mouseposition.y,left:mouseposition.x,scale:mousedown||5}} transition={{type:'spring',stiffness:100}} className='cursorspan ' />
       
 
   )
