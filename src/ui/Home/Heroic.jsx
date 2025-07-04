@@ -4,7 +4,7 @@ import Button from "../Button";
 
 const Heroic = () => {
   return (
-    <div className="w-full h-[100vh] herobg bg-[url('https://html.themexriver.com/industo/images/main-slider/image-2.jpg')] bg-fixed text-white relative overflow-hidden ">
+    <div className="w-full bg-center bg-cover h-[100vh] herobg bg-[url('https://html.themexriver.com/industo/images/main-slider/image-2.jpg')] bg-fixed text-white relative overflow-hidden ">
       <div className="absolute inset-0 bg-gradient-to-l from-[#111111a2]  to-[#0b01788a]"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col justify-center h-full">

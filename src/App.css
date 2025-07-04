@@ -17,7 +17,9 @@
     -webkit-mask-image: url('./assets/pattern.png'); /* Safari support */
   
     mask-size: 120%;
-    animation: maskscale 2s infinite ease-in;
+    mask-repeat: no-repeat;
+    mask-position: right;
+    animation: maskscale 3s infinite ease-in;
     
     
   }
@@ -56,6 +58,8 @@ body,html{
 @keyframes bgscale {
   0% {
     background-size: 100% 100%;
+  } 30% {
+    background-size: 100% 100%;
   }
   60% {
     background-size: 105% 105%;
@@ -66,12 +70,15 @@ body,html{
 }
 @keyframes maskscale{
   0%{
-    width: 0%;
-  }40%{
-    width: 100%;
+    mask-size: 0% 100%;
+  }20%{
+    mask-size: 100% 100%;
   }
-  100%{
-    width: 100%;
+  60%{
+     mask-size: 100% 100%;
+  }
+   100%{
+     mask-size: 100% 100%;
   }
 }
 body::-webkit-scrollbar{
@@ -84,7 +91,7 @@ body::-webkit-scrollbar-thumb{
   border-radius: 40px;
 }
 
-.herobg {
+.herobg:hover {
   animation: bgscale 1.9s infinite  ease-in-out alternate-reverse;
   transition: all;
 
