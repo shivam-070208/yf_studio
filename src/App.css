@@ -1,1 +1,66 @@
 @import 'tailwindcss';
+
+@layer utilities{
+  .cursorspan{
+    @apply w-4 h-4 -translate-x-1/2 -translate-y-1/2 z-[999] pointer-events-none absolute   bg-cursor rounded-full;
+    animation: scaleIn 0.9s infinite cubic-bezier(0.2, 0, 1.0, 0.7) alternate;
+     mix-blend-mode:lighten;
+  }
+}
+
+@theme inline{
+  --color-cursor:var(--color-orange-500);
+  
+ 
+  
+}
+
+body,html{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  overflow-x: hidden;
+
+}
+
+
+
+@keyframes scaleIn {
+  0% { transform: scale(0.7); }
+  25% { transform: scale(1.0); }
+  40%{
+    transform: scale(1.2);
+  }
+    60%{
+    transform: scale(0.0);
+  }
+  100%{
+    transform: scale(1.0);
+  }
+}
+@keyframes bgscale {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 100% 99%;
+  }
+ 40% {
+    background-size: 100% 100%; /* "Pause" frame */
+  }
+}
+::-webkit-scrollbar{
+  background:white;
+  width: 10px;
+  
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-green-600);
+  border-radius: 40px;
+}
+
+.herobg {
+  animation: bgscale 1.2s infinite alternate ease-in-out;
+  background-position: center;
+  background-repeat: no-repeat;
+}
