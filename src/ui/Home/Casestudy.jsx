@@ -43,7 +43,8 @@ const Casestudy = () => {
             slidesPerView={1}
             loop={true}
             modules={[Autoplay]}
-              autoplay={{
+          
+            autoplay={{
           
             disableOnInteraction: false,
           }}
@@ -61,6 +62,7 @@ const Casestudy = () => {
                 />
               </SwiperSlide>
             ))}
+            
           </Swiper>
 
           {/* Dots */}
