@@ -3,7 +3,8 @@
 @layer utilities{
   .cursorspan{
     @apply w-4 h-4 -translate-x-1/2 -translate-y-1/2 z-[999] pointer-events-none fixed   bg-cursor rounded-full;
-   
+    animation: scaleIn 0.9s infinite cubic-bezier(0.2, 0, 1.0, 0.7) alternate;
+     
   }
 .pattern {
     @apply relative inline-block px-10 py-3;
