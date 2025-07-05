@@ -27,39 +27,27 @@ const Heroic = () => {
         </div>
       </div>
         
-      <div className="absolute   bottom-0 w-[200%]  overflow-hidden leading-none sm:flex hidden">
-       
-     <svg
-  viewBox="0 0 500 200"
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
-  className="w-1/2 h-[150px] wave "
->
-<path
-  fill="#ffffff" stroke="#ffffff"
-  d="M0,100 
-     C83,200 83,0 167,100 
-     C250,200 250,0 333,100 
-     C417,200 417,0 500,100.5
-     L500,200 L0,200 Z"
-/>
-</svg>
-    <svg
-  viewBox="0 0 500 200" 
-  xmlns="http://www.w3.org/2000/svg"
-  preserveAspectRatio="none"
-  className="w-1/2 h-[150px] wave"
->
-<path
-  fill="#ffffff"
-  d="M0,100 
-     C83,200 83,0 167,100 
-     C250,200 250,0 333,100 
-     C417,200 417,0 500,100 
-     L500,200 L0,200 Z"
-/>
-</svg>
+  <div className="absolute bottom-0 w-[200%] overflow-hidden leading-none sm:flex hidden">
+  <svg
+    viewBox="0 0 500 200"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+    className="w-[50.2%] translate-x-5 h-[150px] wave"
+  >
+    <path fill="#ffffff"
+      d="M0,100 C83,200 83,0 167,100 C250,200 250,0 333,100 C417,200 417,0 500,110 L500,200 L0,200 Z" />
+  </svg>
+  <svg
+    viewBox="0 0 500 200"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="none"
+    className="w-[50.2%] h-[150px] wave -ml-[1px]"
+  >
+    <path fill="#ffffff"
+      d="M0,100 C83,200 83,0 167,100 C250,200 250,0 333,100 C417,200 417,0 500,100 L500,200 L0,200 Z" />
+  </svg>
 </div>
+
 
       </div>
     

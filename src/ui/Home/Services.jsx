@@ -61,7 +61,7 @@ const HomeService = () => {
               ease: [0.22, 1, 0.36, 1], // smoother than linear
               delay: index * 0.1,
             }}
-            key={index}
+            key={index} onMouseEnter={()=>sethovered(true)} onMouseLeave={()=>sethovered(false)}
             className="bg-[#1C0060] w-fit h-fit overflow-hidden -z-10 relative group text-white p-10 text-center shadow-md hover:shadow-xl transition-all"
           >
             <div className="w-14 h-14 mx-auto mb-4 z-10 bg-blue-950 bg-opacity-10 flex items-center justify-center rounded-full text-white text-xl relative">

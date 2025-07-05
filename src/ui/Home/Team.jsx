@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaPlus, FaFacebookF, FaInstagram, FaDribbble } from 'react-icons/fa';
 import Button from '../Button';
+import { motion } from 'motion/react';
 
 const teamMembers = [
   {
@@ -41,7 +42,7 @@ const HomeTeam = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         {teamMembers.map((member, index) => (
-          <div
+          <motion.div initial={{opacity:0,x:-4}} whileInView={{opacity:1,x:0}} transition={{delay:0.2*index}} viewport={{once:true}}
             key={index}
             className="bg-white cursor-pointer  shadow-lg overflow-hidden relative group"
           >
@@ -72,7 +73,7 @@ const HomeTeam = () => {
               </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 

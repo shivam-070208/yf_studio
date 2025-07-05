@@ -3,7 +3,6 @@
 @layer utilities{
   .cursorspan{
     @apply w-4 h-4 -translate-x-1/2 -translate-y-1/2 z-[999] pointer-events-none fixed   bg-cursor rounded-full;
-    animation: scaleIn 0.9s infinite cubic-bezier(0.2, 0, 1.0, 0.7) alternate;
    
   }
 .pattern {
@@ -12,6 +11,7 @@
 
   .pattern::before {
     content: '';
+   
     @apply absolute top-0 left-0 w-full h-full bg-blue-500 rotate-180;
     mask-image: url('./assets/pattern.png');
     -webkit-mask-image: url('./assets/pattern.png'); /* Safari support */
@@ -91,6 +91,8 @@ body::-webkit-scrollbar-thumb{
 .wave{
   animation: wave 10s infinite linear;
 }
+
+
 
 
 
