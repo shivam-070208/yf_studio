@@ -50,7 +50,7 @@ const HomeService = () => {
         </h2>
       </div>
 
-      <div className="relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div className="relative z-10 grid grid-cols-1 place-items-center sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {services.map((service, index) => (
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -75,7 +75,7 @@ const HomeService = () => {
             <button className="bg-blue-500 hover:bg-white transition-all   hover:text-blue-500 cursor-pointer  text-white text-center px-2 py-2 text-lg ">
               <FaPlus fontWeight={100} />
             </button>
-            <div className="flex w-full h-full  absolute top-0 left-0 -z-1">
+            <div className="flex w-full h-full  absolute top-0 left-0  -z-1">
               {Array(4)
                 .fill(0)
                 .map((_, i) => (

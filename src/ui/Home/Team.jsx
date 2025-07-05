@@ -44,7 +44,7 @@ const HomeTeam = () => {
         {teamMembers.map((member, index) => (
           <motion.div initial={{opacity:0,x:-4}} whileInView={{opacity:1,x:0}} transition={{delay:0.2*index}} viewport={{once:true}}
             key={index}
-            className="bg-white cursor-pointer  shadow-lg overflow-hidden relative group"
+            className="bg-white cursor-pointer w-full max-w-sm mx-auto  shadow-lg overflow-hidden relative group"
           >
             <img
               src={member.image}
